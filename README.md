@@ -30,23 +30,23 @@ Ao final da instalação, é possível criar a máquina virtual Debian no comput
 
 Selecione a opção máquina e após isto a opção "Novo" 
 
-![Imagem-1](image.png) 
+![Imagem-1](./Imagens/image.png) 
 
 Digite o nome da máquina virtual, a pasta a armazenar seus conteúdos: 
 
-![Imagem-2](image-1.png) 
+![Imagem-2](./Imagens/image-1.png) 
 
 Caso tenha realizado o download da imagem, selecione o arquivo a partir da opção Imagem ISO > "Outro": 
 
-![Imagem-3](image-2.png) 
+![Imagem-3](./Imagens/image-2.png) 
 
 Caso não tenha atualizado os itens abaixo, selecione o tipo de sistema operacional, seu respectivo subtipo e sua versão. Siga para o segmento "Hardware" 
 
-![Imagem-4](image-3.png) 
+![Imagem-4](./Imagens/image-3.png) 
 
 Altere as opções de memória e número de núcleos dependendo da necessidade de sua utilização, para exemplos práticos somente 2 Gb de memória e um núcleo é o suficiente para a prática. Desde a versão 6 de virtual box ocorre erros ao utilizar o EFI para criar o GRUB, indispensável para iniciar a máquina virtual, portanto desabilite esta opção. Desabilite a instalação assistida e siga para a seção de Disco Rígido 
 
-![Imagem-5](image-4.png) 
+![Imagem-5](./Imagens/image-4.png) 
 
 Para esta prática utilizar somente 20 Gb de armazenamento é o suficiente para configurar e utilizar a máquina virtual. Caso não haja espaço suficiente em disco, mantenha desselecionado a opção "Pré-alocar Tamanho Total" 
 
@@ -54,19 +54,19 @@ Uma vez configurado, pressione finalizar.
 
 Com esta configuração é possível instalar corretamente a máquina virtual, no entanto, é recomendando mais um passo para a transmissão de arquivos entre a máquina virtual e a máquina hospedeira. Com a máquina virtual selecionada, aperte Configurações > Rede > Adaptador 2 e selecione "Habilitar Placa de Rede   
 
-![Imagem-6](image-5.png) 
+![Imagem-6](./Imagens/image-5.png) 
 
 Em conectado a: selecione a opção Placa em modo Bridge. Selecione a placa de rede a ser utilizada e aperte ok. 
 
 Siga a instalação escolhendo a linguagem de preferência, escolha o teclado corretamente e nomeie a máquina virtual a sua escolha. Não adicione o nome de domínio caso não seja necessário em sua rede. Digite a senha do administrador da máquina virtual e crie seu usuário. Após selecionar o fuso horário, escolha a opção de partição assistido - usar disco inteiro. Selecione o disco e selecione a opção Partição em /home separada 
 
-![Imagem-7](image-6.png) 
+![Imagem-7](./Imagens/image-6.png) 
 
 Após esta configuração não há outra adicional a ser feita, conclua o processo de instalação sem informar nenhuma informação solicitada. 
 
-Como o sistema operacional linux no sistema gráfico pode ser custoso, é possivel desabilitá-lo abrindo o Terminal (Selecione o menu ![Imagem-8](image-11.png) e abra o Terminal conforme a figura abaixo) 
+Como o sistema operacional linux no sistema gráfico pode ser custoso, é possivel desabilitá-lo abrindo o Terminal (Selecione o menu ![Imagem-8](./Imagens/image-11.png) e abra o Terminal conforme a figura abaixo) 
 
-![Imagem-9](image-7.png) 
+![Imagem-9](./Imagens/image-7.png) 
 
 altere para o usuário root (su root), digite a senha do usuário administrador e digite os comandos 
 
@@ -410,39 +410,39 @@ para criar um webhook no discord é necessário ser administrador de um servidor
 
 Localize o ícone `+` no canto esquerdo 
 
-![Imagem-10](image-12.png) 
+![Imagem-10](./Imagens/image-12.png) 
 
 Selecione a opção `Criar o meu` 
 
-![Imagem-11](image-13.png) 
+![Imagem-11](./Imagens/image-13.png) 
 
 Selecione a opção `Para meus amigos e eu` 
 
-![Imagem-12](image-14.png) 
+![Imagem-12](./Imagens/image-14.png) 
 
 Crie o servidor com o nome desejado 
 
-![Imagem-13](image-16.png) 
+![Imagem-13](./Imagens/image-16.png) 
 
 Aperte a seta para baixo identificada com o círculo vermelho 
 
-![Imagem-14](image-17.png) 
+![Imagem-14](./Imagens/image-17.png) 
 
 Selecione a opção `Conf. do Servidor` 
 
-![Imagem-15](image-18.png) 
+![Imagem-15](./Imagens/image-18.png) 
 
 Selecione a opção `Integrações` em APPs de acordo com a imagem abaixo 
 
-![Imagem-16](image-19.png) 
+![Imagem-16](./Imagens/image-19.png) 
 
 Escolha a opção `Criar webhook`  
 
-![Imagem-17](image-20.png) 
+![Imagem-17](./Imagens/image-20.png) 
 
 É possível editar o nome e a imagem nesta sessão. Após personificação, selecione a opção `Copiar URL do webhook` 
 
-![Imagem-18](image-21.png) 
+![Imagem-18](./Imagens/image-21.png) 
 
 *_Atenção: Essa informação é sensivel, portanto tenha cuidado para enviá-la a terceiros_   
 
@@ -630,7 +630,7 @@ sudo service cron start
 
 Caso tudo esteja funcionando, ao acessar a página index.html retonará uma página em html de acordo com o código enviado e o webhook enviará mensagens da forma: 
 
-![Imagem-19](image-22.png) 
+![Imagem-19](./Imagens/image-22.png) 
 
 É possível simular a queda do site parando o serviço do nginx utilizando o comando 
 
@@ -642,7 +642,7 @@ service nginx stop
 
 Retornando a mensagem com a abaixo 
 
-![Imagem-20](image-23.png) 
+![Imagem-20](./Imagens/image-23.png) 
 
 para reiniciar o processo digite o comando 
 
@@ -654,10 +654,10 @@ service nginx start
 
 Também é possível simular a queda do site alterando ou link da lista para um inexistente ou alterando o nome do arquivo para outro que não seja index.html, retornando assim a mensagem: 
 
-![Imagem-21](image-24.png) 
+![Imagem-21](./Imagens/image-24.png) 
 
 As mensagens de log no arquivo log.log deve possuir a forma 
 
-![Imagem-22](image-25.png) 
+![Imagem-22](./Imagens/image-25.png) 
 
  
